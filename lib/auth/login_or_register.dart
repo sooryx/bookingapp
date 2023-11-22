@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../user/screens/login.dart';
-import '../user/screens/register.dart';
+import '../user/user_screens/login.dart';
+import '../user/user_screens/register.dart';
 
 
 class LoginOrRegister extends StatefulWidget {

@@ -165,15 +165,15 @@ class _SearchPageState extends State<SearchPage> {
         backgroundColor: Theme.of(context).colorScheme.background,
         centerTitle: true,
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            StreamBuilder(
+      body: Column(
+        children: [
+          Expanded(
+            child: StreamBuilder(
               stream: stream,
               builder: (context,
                   AsyncSnapshot<QuerySnapshot<Map<String, dynamic>>> snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
-                  return CircularProgressIndicator();
+                  return Center(child: CircularProgressIndicator());
                 } else if (snapshot.hasError) {
                   return Center(
                     child: CircularProgressIndicator(),
@@ -211,8 +211,8 @@ class _SearchPageState extends State<SearchPage> {
                 }
               },
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

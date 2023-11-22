@@ -55,7 +55,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 25.h,
                 ),
                 Text(
-                  " K O D S ",
+                  " U S E R ",
                   style: TextStyle(fontSize: 20.sp),
                 ),
                 SizedBox(

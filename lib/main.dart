@@ -1,16 +1,16 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:booking/admin/pages/admin_login.dart';
 import 'package:booking/auth/login_or_register.dart';
-import 'package:booking/admin/pages/admin_homepage.dart';
-import 'package:booking/user/screens/booking_page.dart';
-import 'package:booking/user/screens/search_page.dart';
-import 'package:booking/user/screens/user_homepage.dart';
-import 'package:booking/user/screens/profile.dart';
+import 'package:booking/user/user_screens/booking_page.dart';
+import 'package:booking/user/user_screens/profile.dart';
+import 'package:booking/user/user_screens/search_page.dart';
+import 'package:booking/user/user_screens/user_homepage.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'admin/pages/list_of_users.dart';
-import 'admin/pages/all_bookings.dart';
+import 'admin/admin_screens/admin_homepage.dart';
+import 'admin/admin_screens/admin_login.dart';
+import 'admin/admin_screens/all_bookings.dart';
+import 'admin/admin_screens/list_of_users.dart';
 import 'firebase_options.dart';
 import 'onboarding_screen/onboarding_screen.dart';
 
