@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class AvailableRoomTileForUser extends StatefulWidget {
   final String roomno;
@@ -151,7 +152,23 @@ class _AvailableRoomTileForUserState extends State<AvailableRoomTileForUser> {
           ///BOOK_NOW
           Center(
             child: GestureDetector(
-              onTap: widget.onBookNowPressed,
+              onTap: () {
+                // Check if the selected number of guests is not more than 2
+                if (selectedGuests <= 2) {
+                  // Call the onBookNowPressed callback only if the condition is met
+                  widget.onBookNowPressed?.call();
+                } else {
+                  Fluttertoast.showToast(
+                      msg: "Cannot book more than 2 guests.",
+                      toastLength: Toast.LENGTH_SHORT,
+                      gravity: ToastGravity.BOTTOM,
+                      timeInSecForIosWeb: 1,
+                      backgroundColor: Colors.black,
+                      textColor: Colors.white,
+                      fontSize: 12.0);
+                  print("Cannot book more than 2 guests.");
+                }
+              },
               child: Container(
                 height: 60.h,
                 width: 180.w,
