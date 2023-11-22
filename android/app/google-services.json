@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "352020076843",
+    "firebase_url": "https://booking-app-a83f1-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "booking-app-a83f1",
+    "storage_bucket": "booking-app-a83f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352020076843:android:f30f54e5b7f2f98b5d0d6e",
+        "android_client_info": {
+          "package_name": "com.example.booking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3jBMltnQnrO-sSn0KhEe4oHKtd5IUCDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
