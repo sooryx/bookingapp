@@ -33,7 +33,6 @@ class _SearchPageState extends State<SearchPage> {
         .get();
 
     if (userDoc.exists) {
-      // The document exists, and you can access its data
       var userData = userDoc.data();
       if(userData!=null) {
         print('Username: ${userData['username']}');

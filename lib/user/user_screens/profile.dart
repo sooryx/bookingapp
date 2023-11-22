@@ -28,7 +28,6 @@ class _ProfilePageState extends State<ProfilePage> {
         .get();
 
     if (userDoc.exists) {
-      // The document exists, and you can access its data
       var userData = userDoc.data();
       if(userData!=null) {
         print('Username: ${userData['username']}');

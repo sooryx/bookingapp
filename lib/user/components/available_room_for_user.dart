@@ -22,7 +22,6 @@ class AvailableRoomTileForUser extends StatefulWidget {
 }
 
 class _AvailableRoomTileForUserState extends State<AvailableRoomTileForUser> {
-  // Add a variable to store the selected number of guests
   int selectedGuests = 1;
 
   @override
@@ -153,9 +152,7 @@ class _AvailableRoomTileForUserState extends State<AvailableRoomTileForUser> {
           Center(
             child: GestureDetector(
               onTap: () {
-                // Check if the selected number of guests is not more than 2
                 if (selectedGuests <= 2) {
-                  // Call the onBookNowPressed callback only if the condition is met
                   widget.onBookNowPressed?.call();
                 } else {
                   Fluttertoast.showToast(
